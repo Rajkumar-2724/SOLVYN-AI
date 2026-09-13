@@ -84,14 +84,14 @@ export default function SignUp() {
           <div className="auth-logo-icon">
             <Waves size={28} className="text-white" />
           </div>
-          <h1 className="auth-brand-name">SeaGuard AI</h1>
+          <h1 className="auth-brand-name">SOLVYN AI</h1>
           <p className="auth-brand-tagline">Smarter Breakwaters. Safer Coasts.</p>
         </div>
 
         {/* Sign Up Card */}
         <div className="auth-card">
           <h2 className="auth-card-title">Create Your Account</h2>
-          <p className="auth-card-subtitle">Join SeaGuard AI and manage smarter coastal infrastructure</p>
+          <p className="auth-card-subtitle">Join SOLVYN AI and manage smarter coastal infrastructure</p>
 
           {success ? (
             <div className="auth-success-box">

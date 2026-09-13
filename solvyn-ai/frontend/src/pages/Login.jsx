@@ -72,7 +72,7 @@ export default function Login() {
           <div className="auth-logo-icon">
             <Waves size={28} className="text-white" />
           </div>
-          <h1 className="auth-brand-name">SeaGuard AI</h1>
+          <h1 className="auth-brand-name">SOLVYN AI</h1>
           <p className="auth-brand-tagline">Smarter Breakwaters. Safer Coasts.</p>
         </div>
 
@@ -92,7 +92,7 @@ export default function Login() {
                   type="email"
                   value={email}
                   onChange={(e) => { setEmail(e.target.value); setErrors(prev => ({ ...prev, email: '' })); setServerError('') }}
-                  placeholder="admin@seaguard.ai"
+                  placeholder="admin@solvyn-ai.ai"
                   className={`auth-input pl-10 ${errors.email ? 'auth-input-error' : ''}`}
                   autoComplete="email"
                 />
@@ -177,7 +177,7 @@ export default function Login() {
 
           {/* Demo hint */}
           <div className="auth-demo">
-            Demo: admin@seaguard.ai / admin123
+            Demo: admin@solvyn-ai.ai / admin123
           </div>
         </div>
         </div>

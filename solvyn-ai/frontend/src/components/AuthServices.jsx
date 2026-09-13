@@ -21,7 +21,7 @@ export default function AuthServices() {
       <p className="auth-services-eyebrow">Available services</p>
       <h2 className="auth-services-title">One clear view of your coastline.</h2>
       <p className="auth-services-intro">
-        SeaGuard AI brings monitoring, prediction, and maintenance intelligence together in one workspace.
+        SOLVYN AI brings monitoring, prediction, and maintenance intelligence together in one workspace.
       </p>
 
       <div className="auth-services-list">

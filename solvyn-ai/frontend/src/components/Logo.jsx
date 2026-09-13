@@ -8,7 +8,7 @@ export default function Logo() {
         <Waves size={19} className="text-white" strokeWidth={2.5} />
       </div>
       <div className="leading-tight">
-        <p className="font-bold text-[15px] text-white tracking-tight">SeaGuard AI</p>
+        <p className="font-bold text-[15px] text-white tracking-tight">SOLVYN AI</p>
         <p className="text-[10px] text-accent-light/70 -mt-0.5 font-medium">Coastal Intelligence</p>
       </div>
     </Link>

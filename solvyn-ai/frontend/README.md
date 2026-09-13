@@ -1,6 +1,6 @@
-# SeaGuard AI — Frontend Prototype
+# SOLVYN AI — Frontend Prototype
 
-Smarter Breakwater Management with AI. A frontend-only React prototype recreating the SeaGuard AI dashboard suite from the provided UI reference screenshots.
+Smarter Breakwater Management with AI. A frontend-only React prototype recreating the SOLVYN AI dashboard suite from the provided UI reference screenshots.
 
 ## Tech Stack
 - React 18 + Vite

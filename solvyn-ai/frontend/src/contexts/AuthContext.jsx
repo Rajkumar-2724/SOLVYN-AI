@@ -2,7 +2,7 @@ import { createContext, useState, useContext } from 'react'
 
 export const AuthContext = createContext(null)
 
-const DEMO_CREDENTIALS = { email: 'admin@seaguard.ai', password: 'admin123' }
+const DEMO_CREDENTIALS = { email: 'admin@solvyn-ai.ai', password: 'admin123' }
 
 export function AuthProvider({ children }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -16,7 +16,7 @@ export function AuthProvider({ children }) {
       setUser({ name: account.name || 'Admin', role: 'Marine Engineer', email })
       return { success: true }
     }
-    return { success: false, error: 'Invalid email or password. Try admin@seaguard.ai / admin123' }
+    return { success: false, error: 'Invalid email or password. Try admin@solvyn-ai.ai / admin123' }
   }
 
   const signup = ({ name, email, password }) => {

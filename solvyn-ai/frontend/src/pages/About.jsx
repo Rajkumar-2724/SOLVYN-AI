@@ -27,7 +27,7 @@ export default function About() {
         icon={Info}
         crumbs={[{ label: 'Home', path: '/' }, { label: 'About & Features' }]}
         title="About & Features"
-        subtitle="Everything SeaGuard AI does to keep coastal breakwaters monitored, predicted, and protected."
+        subtitle="Everything SOLVYN AI does to keep coastal breakwaters monitored, predicted, and protected."
       />
 
       <div className="about-surface px-4 lg:px-6 mt-4 relative rounded-2xl overflow-hidden">
@@ -41,7 +41,7 @@ export default function About() {
             <p className="text-accent-light text-xs font-semibold tracking-wide mb-2">About Us</p>
             <h2 className="text-2xl font-bold text-white mb-3">Built for a Stronger, Safer Tomorrow</h2>
             <p className="text-sm text-txt-muted mb-6 max-w-md">
-              SeaGuard AI is an intelligent breakwater monitoring system that combines advanced sensors, AI and data analytics to detect, predict and prevent structural failures — keeping our coasts and communities safer.
+              SOLVYN AI is an intelligent breakwater monitoring system that combines advanced sensors, AI and data analytics to detect, predict and prevent structural failures — keeping our coasts and communities safer.
             </p>
             <div className="grid grid-cols-2 gap-x-4 gap-y-4">
               {features.map((f) => (
