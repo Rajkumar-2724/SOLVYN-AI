@@ -2,18 +2,31 @@ import { useState } from 'react'
 import {
   Waves, Play, RotateCcw, Wifi, RefreshCw, UploadCloud, KeyRound, FileCheck2,
   AlertTriangle, ShieldAlert, ShieldQuestion, ShieldCheck, Lightbulb, ClipboardList,
-  Eye, Sparkles, Clock, Compass, Zap,
+  Eye, Sparkles, Clock, Compass, Zap, CheckCircle2,
 } from 'lucide-react'
 import {
   ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip,
   AreaChart, Area, ReferenceDot, ReferenceLine,
 } from 'recharts'
 import { waveTrend, waveHeightOverview, riskZones } from '../data/waveData.js'
+import { useWaveAnalysis } from '../contexts/WaveAnalysisContext.jsx'
 
 const severityColor = { High: 'bg-danger-dim text-danger', Medium: 'bg-warning-dim text-warning', Low: 'bg-success-dim text-success' }
 
 export default function WaveAnalysis() {
   const [zoneImport, setZoneImport] = useState(true)
+  const [synced, setSynced] = useState(false)
+  const { saveWaveAnalysis, resetWaveAnalysis } = useWaveAnalysis()
+
+  function handleStart() {
+    setSynced(true)
+    saveWaveAnalysis({ height: 2.8, period: 8.6, direction: 236, energy: 12.4, waterLevel: 1.2, frequency: 0.116 })
+  }
+
+  function handleReset() {
+    setSynced(false)
+    resetWaveAnalysis()
+  }
 
   return (
     <div className="dark-page pb-16">
@@ -39,9 +52,14 @@ export default function WaveAnalysis() {
               <p className="text-sm text-txt-muted mt-1 max-w-lg">Analyze wave data (real-time or uploaded) to understand wave characteristics and get insights for coastal protection and structural safety.</p>
             </div>
           </div>
-          <div className="flex items-center gap-2 shrink-0">
-            <button className="btn-primary px-4 py-2.5 text-sm font-semibold flex items-center gap-2"><Play size={15} /> Start Wave Analysis</button>
-            <button className="btn-outline px-4 py-2.5 text-sm font-semibold flex items-center gap-2"><RotateCcw size={15} /> Reset Analysis</button>
+          <div className="flex flex-wrap items-center gap-2 shrink-0">
+            {synced && (
+              <span className="badge bg-success-dim text-success">
+                <CheckCircle2 size={12} /> Synced to Image Analysis
+              </span>
+            )}
+            <button onClick={handleStart} className="btn-primary px-4 py-2.5 text-sm font-semibold flex items-center gap-2"><Play size={15} /> Start Wave Analysis</button>
+            <button onClick={handleReset} className="btn-outline px-4 py-2.5 text-sm font-semibold flex items-center gap-2"><RotateCcw size={15} /> Reset Analysis</button>
           </div>
         </div>
       </div>

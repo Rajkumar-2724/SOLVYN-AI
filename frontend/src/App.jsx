@@ -3,6 +3,7 @@ import MainLayout from './layouts/MainLayout.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import Service from './pages/Service.jsx'
 import WaveAnalysis from './pages/WaveAnalysis.jsx'
+import ImageAnalysis from './pages/ImageAnalysis.jsx'
 import LiveWaveTracking from './pages/LiveWaveTracking.jsx'
 import PrePostAnalysis from './pages/PrePostAnalysis.jsx'
 import SolvynAnalysis from './pages/SolvynAnalysis.jsx'
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/service" element={<Service />} />
             <Route path="/wave-analysis" element={<WaveAnalysis />} />
+            <Route path="/image-analysis" element={<ImageAnalysis />} />
             <Route path="/live-wave-tracking" element={<LiveWaveTracking />} />
             <Route path="/pre-post-analysis" element={<PrePostAnalysis />} />
             <Route path="/solvyn-analysis" element={<SolvynAnalysis />} />

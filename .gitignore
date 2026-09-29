@@ -141,3 +141,15 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Python / FastAPI backend
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.local
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/

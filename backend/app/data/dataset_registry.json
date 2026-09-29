@@ -1,0 +1,57 @@
+[
+  {
+    "id": "pdo-douro-2022",
+    "name": "Douro River Breakwater Orthophoto (Porto 2022)",
+    "region": "Douro River (North Portugal · Porto)",
+    "type": "nauticalChart|orthophoto",
+    "url": "https://doi.org/10.3390/rs16020331",
+    "priority": "Primary — use for Zone 01/02 calibration",
+    "useCases": [
+      "PRE-storm reference geometry",
+      "Post-storm displacement baseline",
+      "Orthophoto-to-model coregistration"
+    ],
+    "formats": ["GeoTIFF", "KML"],
+    "notes": "0.10 m orthophoto; accurate coastal segment for Port of Leixões breakwater; coordinate system WGS84."
+  },
+  {
+    "id": "lnrec-leixoes-2022",
+    "name": "Leixões Breakwater Monitoring Dataset (LNEC)",
+    "region": "Leixões Port · Porto",
+    "type": "monitoring|camera|survey",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2452321622000816",
+    "priority": "Primary — camera + survey with armour-unit labels",
+    "useCases": [
+      "Armour-unit detection (48 stones)",
+      "Displacement/rotation change detection",
+      "Wave-overtopping cross-correlation"
+    ],
+    "formats": ["CSV", "Shapefile"],
+    "notes": "DOI via Sciencedirect; EFFORTplus repository mirrors derivations at LNEC repository."
+  },
+  {
+    "id": "lnec-effortplus",
+    "name": "EFFORTplus Dataset (LNEC Repository)",
+    "region": "Leixões breakwater · Portugal",
+    "type": "dataset|reports",
+    "url": "https://repositorio.lnec.pt/xmlui/handle/123456789/1015921",
+    "priority": "Secondary — labelled survey + reports",
+    "useCases": ["Validation labels", "Camera parameter reference", "Technical dataset metadata"],
+    "formats": ["PDF", "CSV"],
+    "notes": "LNEC repository record for EFFORTplus project artifacts."
+  },
+  {
+    "id": "usgs-nauset-2023",
+    "name": "USGS Nauset Light Beach · Hurricane Lee (2023)",
+    "region": "US East Coast · Nauset Light Beach",
+    "type": "post-storm|survey|lidar",
+    "url": "https://data.usgs.gov/datacatalog/data/US",
+    "priority": "Heads-up — verify full catalog identifier before publish",
+    "useCases": [
+      "Post-storm erosion/displacement reference",
+      "Hurricane Lee impact wave/water-level data"
+    ],
+    "formats": ["CSV", "GeoTIFF"],
+    "notes": "User-provided truncated URL (data.usgs.gov/datacatalog/data/US) — verify full catalog identifier before publish."
+  }
+]

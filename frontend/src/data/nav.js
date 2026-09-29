@@ -10,12 +10,14 @@ import {
   Info,
   Waves,
   Activity,
+  Image,
 } from 'lucide-react'
 
 export const navItems = [
   { label: 'Dashboard', path: '/', icon: LayoutDashboard },
   { label: 'Service', path: '/service', icon: Grid3x3 },
   { label: 'Wave Analysis', path: '/wave-analysis', icon: Waves },
+  { label: 'Image Analysis', path: '/image-analysis', icon: Image },
   { label: 'Pre & Post Analysis', path: '/pre-post-analysis', icon: ScanSearch },
   { label: 'Solvyn Analysis', path: '/solvyn-analysis', icon: Activity },
   { label: 'Live Wave Tracking', path: '/live-wave-tracking', icon: Radar },
@@ -31,6 +33,7 @@ export const primaryNav = [
   { label: 'Dashboard', path: '/', icon: LayoutDashboard },
   { label: 'Service', path: '/service', icon: Grid3x3 },
   { label: 'Wave Analysis', path: '/wave-analysis', icon: Waves },
+  { label: 'Image Analysis', path: '/image-analysis', icon: Image },
   { label: 'Live Wave Tracking', path: '/live-wave-tracking', icon: Radar },
   { label: 'Pre & Post Analysis', path: '/pre-post-analysis', icon: ScanSearch },
   { label: 'Solvyn Analysis', path: '/solvyn-analysis', icon: Activity },
